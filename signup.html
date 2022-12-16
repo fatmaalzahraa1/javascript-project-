@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/signup.css">
+  <title>Document</title>
+</head>
+<!-- form sing up -->
+  <form id = "form" action="login.html" onsubmit ="return validateForm()"style="border:1px solid #ccc">
+    <div class="wrapper">
+      <header>Sign Up</header><br><br>
+     
+      
+  <!--  full name -->
+    <td> Full Name </td><br>
+    <input type = "text" id = "fname" value = "" onblur=""> 
+    <span id = "blankMsg" style="color:red"> </span> <br><br>
+
+<!-- Email -->
+    <td> Email </td><br>
+    <input type = "text" id = "email" value = "" onsubmit="validateF()"> 
+    <span id = "charMsg" style="color:red"> </span> <br><br>
+    
+    <!-- Create a new password -->
+    <td> Password </td><br>
+    <input type = "password" id = "pswd1" value = ""> 
+    <span id = "message1" style="color:red"> </span> <br><br>
+    
+    <!--Confirm Password   -->
+    <td> Confirm Password </td><br>
+    <input type = "password" id = "pswd2" value = ""> 
+    <span id = "message2" style="color:red"> </span> <br><br>
+
+<!-- submit -->
+    <div class="clearfix">
+    <input type = "submit" value = "Submit" class="signupbtn" onclick="AddData()">
+    </div>
+    <p>I already have an account <a href="./login.html">Login</a></p>
+    </form>
+
+</body>
+<script src="./js/signup.js"></script>
+</html>
+
+
+
+
+
+
+
